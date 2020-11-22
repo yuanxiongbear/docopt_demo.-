@@ -10,9 +10,12 @@ Options:
 [--arg3=<arg3>]   Takes any value (this is an optional option)
 [--arg4=<arg4>]   Takes any value (this is an optional option
 """
-
 from docopt import docopt
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
-print(arg4)
+
+def main(arg, arg2, arg3, arg4):
+      print(opt)
+      print(type(opt))
+      print(arg4)
+      
+main(arg, arg2, arg3, arg4)
